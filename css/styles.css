@@ -1,0 +1,176 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+/* section */
+
+.colour-section{
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section{
+  background-color: #fff;
+}
+
+/* Title Section  */
+
+#title {
+  text-align: left;
+  padding-bottom: 7%;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+/* Navigation Bar  */
+
+.navbar-collapse {
+  justify-content: end;
+}
+
+.navbar {
+  padding: 0 0 4rem;
+  /* 0 at top, 0 at left and right, and 4rem at bottom for nav brand alignment and space between navbar and intro section */
+}
+
+.nav-item {
+  padding: 0 18px;
+  /* To create space between nav bar links item  */
+}
+
+.nav-link {
+  font-family: "Ubuntu";
+  font-size: 1.2rem;
+}
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+ /* Download Button  */
+
+.downloadButton {
+  margin: 5% 3% 3% 0;
+}
+
+/* Title Image  */
+
+.PhoneImgForFrontPage {
+  width: 20%;
+  right: 23%;
+  transform: rotate(25deg);
+  /* to rotate the Image  */
+  
+  position: absolute;
+  /* z-index:1; Because Feature-box is Relative position and This Img is Absolute position, 
+  thats why we dont need to set z-index value: Look for Z-index PDF for detailed explination */
+}
+
+/* Feature section  */
+
+#features-box{
+  position: relative;
+  z-index: 1;
+}
+
+.FeatureTitle{
+  font-size: 1.5rem;
+  font-weight:bold;
+}
+
+.Feature{
+  padding: 6% 4% 5%;
+}
+
+/* Feature Icon  */
+
+.fa-bullseye, .fa-circle-check, .fa-heart{
+  color:#e67081;
+  padding-bottom: 5%;
+}
+
+.fa-bullseye:hover, .fa-circle-check:hover, .fa-heart:hover{
+  color: #ff4c68;
+}
+
+/* Testimonial section */
+
+#testimonial{
+  background-color: #e67081;
+  padding-bottom: 3%;
+}
+
+.Review{
+  font-size: 2rem;
+  font-weight:600;
+  padding: 8% 25% 1%;
+  line-height: 160%;
+}
+
+.testimonial-Img{
+  border-radius: 50%;
+  width: 10%;
+  padding: 1%;
+}
+
+.TestimonialBusinessImg{
+  width: 20%;
+  padding: 2%;
+}
+
+/* Pricing section  */
+
+#pricing{
+  margin: 6% 10% 6%;
+}
+
+.pricingLine{
+  padding-bottom: 3%;
+}
+
+/* call to action section  */
+
+#CTA{
+  padding: 7% 15% 7%;
+}
+
+.CTAParagraph{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* Footer Section  */
+
+#contactFooter{
+  padding: 5% 5% 2%;
+  line-height: 250%;
+}
+
+/* mobile responsive */
+
+@media (max-width:1000px){
+
+  .PhoneImgForFrontPage{
+    transform: rotate(0);
+    position: static;
+    width: 50%;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  .Review{
+    font-size: 1.5rem;
+  }
+}
